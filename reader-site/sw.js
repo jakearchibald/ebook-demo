@@ -1,4 +1,7 @@
+// v2
+
 self.addEventListener('install', event => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open('reader-static-v1').then(c => c.addAll([
       'sw-index.html',

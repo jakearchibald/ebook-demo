@@ -1,6 +1,8 @@
+// v2
 importScripts('jszip.js');
 
 self.addEventListener('install', event => {
+  self.skipWaiting();
   event.waitUntil(
     caches.open('pub-static-v1').then(c => c.addAll([
       './',
