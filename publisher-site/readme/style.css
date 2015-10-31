@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: georgia, serif;
+  font-weight: normal;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.page-controls {
+  background: #ddd;
+  padding: 10px;
+  min-height: 60px;
+}
+
+li {
+  margin-bottom: 0.8rem;
+}

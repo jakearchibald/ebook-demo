@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <title>Readme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-controls"></div>
+  <script src="../page.js" async></script>
+  <main>
+    <h1>What's going on?</h1>
+    <p>
+      I attended a meeting of the
+      <a href="http://www.w3.org/dpub/IG/wiki/Main_Page">
+        Digital Publishing Interest Group
+      </a> 
+      recently to provide info on service workers and how
+      they may benefit web implementations of ebook readers.
+      As far as I gathered, the requirements were:
+    </p>
+    <ul>
+      <li>Works offline</li>
+      <li>May be hosted</li>
+      <li>May be a single file that can be downloaded and shared</li>
+      <li>The single file shouldn't be unzippable by the OS</li>
+    </ul>
+    <p>
+      Well, I had a 13 hour flight, so I decided to do some hacking,
+      and this is it.
+    </p>
+    <h1>How to use it</h1>
+    <p>
+      You're reading one of the publications right now. It's just
+      regular static HTML with a single non-blocking script include.
+      This would be under the control of a publisher, perhaps behind
+      a login system. <a href="../">View the "publisher"'s homepage</a>
+      for other publications.
+    </p>
+    <p>
+      If your browser supports service workers (such as Google Chrome),
+      you'll see a checkbox at the top of this page to make the
+      publication work offline, and a link to download an archived
+      format of the publication.
+    </p>
+    <p>
+      There's a seperate <a href="../../reader-site/">e-book reader site</a>
+      which allows you to view the single-file publication archives.
+      In reality it would sit on a different origin.
+    </p>
+    <p>
+      Browsers that don't support service worker can still view
+      publications, but they don't work offline &amp; can't be downloaded
+      as an archive.
+    </p>
+    <p>
+      The <a href="../../reader-site/">e-book reader site</a> requires
+      a service worker capable browser.
+    </p>
+    <p>
+      <a href="page2/">Continue to page 2</a> for a list of features
+      and how the service worker was used.
+    </p>
+  </main>
+</body>
+</html>

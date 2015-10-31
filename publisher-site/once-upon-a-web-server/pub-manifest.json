@@ -1,0 +1,10 @@
+{
+  "title": "Once upon a web server",
+  "edition": 1,
+  "assets": [
+    "",
+    "style.css",
+    "page2/",
+    "page2/whoa.jpg"
+  ]
+}

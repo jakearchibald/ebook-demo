@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>E-reader</title>
+</head>
+<body>
+  <div class="installing-msg">Installing serviceworker…</div>
+  <script>
+    (function() {
+      var installingMsg = document.querySelector('.installing-msg');
+
+      if (!navigator.serviceWorker) {
+        installingMsg.textContent = "Service worker not supported";
+        return;
+      }
+      
+      // I'm not a fan of requiring SW like this, but
+      // it may be required in this case
+      navigator.serviceWorker.register('sw.js');
+      navigator.serviceWorker.ready.then(function() {
+        console.log('ready');
+        location.reload();
+      });
+    }());
+  </script>
+</body>
+</html>

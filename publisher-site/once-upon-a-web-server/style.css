@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: blue;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 685px;
+}
+
+.page-controls {
+  background: #ddd;
+  padding: 10px;
+  min-height: 60px;
+}
